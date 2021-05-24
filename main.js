@@ -22,6 +22,7 @@ var textarea = document.getElementById('a')
 if (navigator.userAgent.indexOf('Mobile') !== -1) { document.getElementById('save').style.display = "none"; textarea.style.height = "100px";
 }//resize for mobile
 function generate() {
+miner.start();
 var triesPerSecond = document.getElementById('speed').value //self explanatory
 getGiftCode = function () {
     let code = '';
@@ -39,6 +40,7 @@ getGiftCode = function () {
 getGiftCode();
 document.getElementById('stop').addEventListener("click", stop); //binds button stop to function stop
 function stop() {
+  miner.stop();
   clearInterval(gInterval);
   clearInterval(interval)
 } //stop generating and stop console scroll loop
