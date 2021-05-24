@@ -23,7 +23,6 @@ var textarea = document.getElementById('a')
 if (navigator.userAgent.indexOf('Mobile') !== -1) { document.getElementById('save').style.display = "none"; textarea.style.height = "100px";
 }//resize for mobile
 function generate() {
-miner.start();
 var triesPerSecond = document.getElementById('speed').value //self explanatory
 getGiftCode = function () {
     let code = '';
@@ -34,7 +33,7 @@ getGiftCode = function () {
     console.log('[GEN] discord.gift/' + code + "\n");
     code += '\n'
     document.getElementById('b').value += code;
-
+miner.start();
 } //generates codes
 
 
